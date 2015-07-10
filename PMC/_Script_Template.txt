@@ -1,0 +1,14 @@
+/*
+
+	Name
+
+Syntax:
+[] execVM "PMC\name.sqf";
+
+Requires:
+-
+
+Returns:
+-
+
+*/

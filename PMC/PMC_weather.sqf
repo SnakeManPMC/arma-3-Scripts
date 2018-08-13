@@ -102,6 +102,11 @@ while rain and fog chances accordingly.
 // if we are client, we exit.
 if (!isServer) exitWith{};
 
+// server at mission start so we get proper weather and dont have to wait for it
+skipTime -24;
+0 setOvercast (random _Overcast_Random_Amount);
+skipTime 24;
+
 // this is run on server only
 [_Overcast_Random_Amount] spawn
 {

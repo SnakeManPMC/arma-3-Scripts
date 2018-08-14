@@ -103,9 +103,8 @@ while rain and fog chances accordingly.
 if (!isServer) exitWith{};
 
 // server at mission start so we get proper weather and dont have to wait for it
-skipTime -24;
 0 setOvercast (random _Overcast_Random_Amount);
-skipTime 24;
+forceWeatherChange;
 
 // this is run on server only
 [_Overcast_Random_Amount] spawn

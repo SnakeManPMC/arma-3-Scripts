@@ -1,2 +1,2 @@
 
-player sideChat format["Weather Forecast: %1", PMC_Weather_forecast];
+player sideChat format["%1", PMC_Weather_forecast];

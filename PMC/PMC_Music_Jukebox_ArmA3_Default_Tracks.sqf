@@ -110,6 +110,7 @@ _PMC_ArmA3_Tracks =
 	"C_EA_RadioBroadcast2",
 	"C_EA_RadioMusic1",
 	"C_EA_RadioMusic2",
+/*
 	"RadioAmbient1",
 	"RadioAmbient2",
 	"RadioAmbient3",
@@ -140,6 +141,7 @@ _PMC_ArmA3_Tracks =
 	"RadioAmbient28",
 	"RadioAmbient29",
 	"RadioAmbient30",
+*/
 	"Fallout",
 	"Defcon",
 	"Wasteland",

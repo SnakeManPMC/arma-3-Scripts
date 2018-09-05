@@ -35,7 +35,7 @@ _grp setFormation "LINE";
 
 // 1st
 _grp addWaypoint [_pos, _wpRange];
-[_grp, 1] setWaypointBehaviour "AWARE";
+[_grp, 1] setWaypointBehaviour "SAFE";
 [_grp, 1] setWaypointCombatMode "RED";
 [_grp, 1] setWaypointSpeed "FULL";
 [_grp, 1] setWaypointFormation "WEDGE";

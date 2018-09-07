@@ -1,5 +1,5 @@
 
-// 2018-09-07 doesnt work, must be bug in arma3 v1.84
+// 2018-09-07 doesnt work, must be bug in arma3 v1.84, if this ever worked... this HPP is scheduled for removal.
 class Backpacks
 {
 /*

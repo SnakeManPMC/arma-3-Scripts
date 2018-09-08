@@ -14,7 +14,7 @@ PMC_Create_CUP_NAPA_Sniper_Team =
 	waitUntil {!(isNull _grp)};
 
 	"CUP_I_GUE_Sniper" createUnit [_pos, _grp, "", 1, "LIEUTENANT"];
-	"CUP_I_GUE_Soldier_Scout" createUnit [_pos, _grp, "", 0.33, "SERGEANT"]; };
+	"CUP_I_GUE_Soldier_Scout" createUnit [_pos, _grp, "", 0.33, "SERGEANT"];
 
 	_grp
 };

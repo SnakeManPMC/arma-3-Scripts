@@ -16,15 +16,7 @@ Returns:
 
 */
 
-private
-[
-	"_m",
-	"_ran",
-	"_PMC_ArmA3_Tracks"
-];
-
-// all VTE tracks
-_PMC_ArmA3_Tracks =
+private _PMC_ArmA3_Tracks =
 [
 	"LeadTrack01_F",
 	"LeadTrack01a_F",
@@ -174,10 +166,14 @@ _PMC_ArmA3_Tracks =
 	"AmbientTrack02a_F_EXP",
 	"AmbientTrack02b_F_EXP",
 	"AmbientTrack02c_F_EXP",
-	"AmbientTrack02d_F_EXP"
+	"AmbientTrack02d_F_EXP",
+	"LeadTrack01_F_Malden",
+	"LeadTrack02_F_Malden",
+	"LeadTrack01_F_Orange",
+	"AmbientTrack02_F_Orange",
+	"EventTrack01_F_Orange",
+	"EventTrack02_F_Orange",
+	"AmbientTrack01_F_Orange"
 ];
 
-_ran = (floor random (count _PMC_ArmA3_Tracks));
-_m = (_PMC_ArmA3_Tracks select _ran);
-
-playMusic [_m, 0];
+playMusic [(selectRandom _PMC_ArmA3_Tracks), 0];

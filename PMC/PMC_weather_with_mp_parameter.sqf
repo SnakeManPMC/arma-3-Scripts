@@ -1,6 +1,6 @@
 /*
 
-Run this on both server AND client!
+Run this on server
 
 Syntax:
 // set our weather using multiplayer parameter array
@@ -36,6 +36,7 @@ class Params
 7 "Random (Dry - Deserts)" (requires PMC_weather.sqf)
 
 */
+
 switch (paramsarray select 1) do
 {
 	// clear skies
@@ -43,6 +44,7 @@ switch (paramsarray select 1) do
 	{
 		0 setOvercast 0;
 		0 setRain 0;
+		forceWeatherChange;
 	};
 	
 	// overcast
@@ -50,6 +52,7 @@ switch (paramsarray select 1) do
 	{
 		0 setOvercast 0.5;
 		0 setRain 0;
+		forceWeatherChange;
 	};
 	
 	// Cloudy
@@ -57,6 +60,7 @@ switch (paramsarray select 1) do
 	{
 		0 setOvercast 0.75;
 		0 setRain 0;
+		forceWeatherChange;
 	};
 	
 	// rain storm
@@ -64,6 +68,7 @@ switch (paramsarray select 1) do
 	{
 		0 setOvercast 1;
 		0 setRain 1;
+		forceWeatherChange;
 	};
 	
 	// rain storm with fog
@@ -72,12 +77,13 @@ switch (paramsarray select 1) do
 		0 setOvercast 1;
 		0 setRain 1;
 		0 setFog 0.5;
+		forceWeatherChange;
 	};
 	
 	// random, no parameters; (rainy - jungles)
 	case 6:
 	{
-		[] execVM "PMC\PMC_weather.sqf";
+		[1.1] execVM "PMC\PMC_weather.sqf";
 	};
 
 	// random (dry - deserts)

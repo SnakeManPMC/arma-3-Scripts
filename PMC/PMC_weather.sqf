@@ -44,7 +44,7 @@ forceWeatherChange;
 
 		PMC_Weather_forecast = format
 		[
-			"Weather report: %1 change time %2 min, duration %3 min. setOvercast: %4",
+			"PMC_Weather: report: %1 change time %2 min, duration %3 min. setOvercast: %4",
 			_ForeCast,
 			(floor (_minimum_change_time / 60)),
 			(floor (_duration / 60)),

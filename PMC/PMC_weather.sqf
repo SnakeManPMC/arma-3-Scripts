@@ -50,6 +50,8 @@ forceWeatherChange;
 			(floor (_duration / 60)),
 			_PMC_do_overcast
 		];
+		publicVariable "PMC_Weather_forecast";
+
 		_minimum_change_time setOvercast _PMC_do_overcast;
 		simulWeatherSync;
 
